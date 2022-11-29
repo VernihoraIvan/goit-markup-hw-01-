@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./index.html"><span>web</span>studio</a>
-            <ul>
+      <nav class="site-nav">
+        <a href="./index.html" class="logo"> <span class="iris">web</span>studio</a>
+        <ul class="nav-list">
           <li><a href="./index.html">Studio</a></li>
           <li><a href="./portfolio.html">Portfolio</a></li>
           <li><a href="">Contacts</a></li>
         </ul>
-        </nav>
+      </nav>
         <!-- Contacts -->
-      <ul>
+ <ul class="contact-list">
         <li>
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -28,21 +33,21 @@
       </ul>
     </header>
     <main>
-        <h1>
+        <h1 class="hidden">
             portfolio
         </h1>
         <ul>
-            <li><button type="button">All</button></li>
-            <li><button type="button">Web Site</button></li>
-            <li><button type="button">App</button></li>
-            <li><button type="button">Design</button></li>
-            <li><button type="button">Marketing</button></li>
+            <li><button type="button" class="white-button">All</button></li>
+            <li><button type="button" class="white-button">Web Site</button></li>
+            <li><button type="button" class="white-button">App</button></li>
+            <li><button type="button" class="white-button">Design</button></li>
+            <li><button type="button" class="white-button">Marketing</button></li>
         </ul>
-        <h3>
+        <h3 class="hidden">
             our service
         </h3>
-        <ul>
-            <li>
+        <ul class="project-card">
+            <li class="project-item">
                 <a href="">
                     <img src="./images/banking-app-interface-concept.jpg" alt=""width="360" height="300">
                         <h3>Banking App Interface Concept</h3>
@@ -50,7 +55,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/cashless-payment.jpg" alt=""width="360" height="300">
                         <h3>Cashless Payment</h3>
@@ -58,7 +63,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/meditaion-app.jpg" alt=""width="360" height="300">
                         <h3>Meditaion App</h3>
@@ -66,7 +71,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/taxi-service.jpg" alt=""width="360" height="300">
                         <h3>Taxi Service</h3>
@@ -74,7 +79,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/screen-illustrations.jpg" alt=""width="360" height="300">
                         <h3>Screen Illustrations</h3>
@@ -82,7 +87,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/online-courses.jpg" alt=""width="360" height="300">
                         <h3>Online Courses</h3>
@@ -90,7 +95,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/instagram-stories-concept.jpg" alt=""width="360" height="300">
                         <h3>Instagram Stories Concept</h3>
@@ -98,7 +103,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/organic-food.jpg" alt=""width="360" height="300">
                         <h3>Organic Food</h3>
@@ -106,7 +111,7 @@
                     </img>
                 </a>
             </li>
-            <li>
+            <li class="project-item">
                 <a href="">
                     <img src="./images/fresh-coffee.jpg" alt=""width="360" height="300">
                         <h3>Fresh Coffee</h3>
@@ -116,9 +121,9 @@
             </li>
         </ul>
     </main>
-    <footer>
-      <a href="./index.html"> <span>web</span>studio</a>
-      <p>
+   <footer class="bottom">
+      <a class="second-logo" href="./index.html"> <span class="iris">web</span>studio</a>
+      <p class="summury">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>

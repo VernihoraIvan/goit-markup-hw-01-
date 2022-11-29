@@ -2,24 +2,25 @@
 /* secondary background color #F4F4FD */
 /* (title, footer and hero) title color "NAVY BLUE" #2E2F42 */
 /* text color slate #434455 */
-/* inactive button color  #E7E9FC */
-/* inactive button text color "IRIS" #4D5AE5 */
-/* active button color #4D5AE5 */
-/* active button text color #FFFFFF */
+/* white button color  #E7E9FC */
+/* white button text color "IRIS" #4D5AE5 */
+/* blue button color #4D5AE5 */
+/* blue button text color #FFFFFF */
+/* active blue button color #404BBF */
 
 :root {
   --main-background-color: #ffffff;
   --secondary-background-color: #f4f4fd;
   --title-color-navyblue: #2e2f42;
   --text-color-slate: #434455;
-  --inactive-button-color: #e7e9fc;
-  --inactive-button-text-color: #4d5ae5;
-  --active-button-color: #4d5ae5;
-  --active-button-text-color: #ffffff;
+  --white-button-color: #e7e9fc;
+  --white-button-text-color: #4d5ae5;
+  --blue-button-color: #4d5ae5;
+  --blue-button-text-color: #ffffff;
+  --active-blue-button-color: #404bbf;
 }
 
 body {
-    
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -30,57 +31,64 @@ body {
   font-style: regular;
   text-decoration: none;
   width: 1440px;
-
 }
 a {
   text-decoration: none;
   color: var(--title-color-navyblue);
 }
-.capital {
-  font-weight: 600;
+
+.logo {
+  font-weight: 800;
   text-transform: uppercase;
-  Font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 ul {
   list-style: none;
 }
+
 header {
   background-color: var(--main-background-color);
+}
+
+nav li {
+  display: inline-block;
 }
 
 .nav-list li {
   font-weight: 600;
   color: var(--title-color-navyblue);
 }
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a:focus {
   color: var(--text-color-slate);
 }
 
-.nav-list a:active{
-    color: var(--active-button-color)
-}
-
-.nav-list a:active{
-    color: var(--active-button-color)
+.nav-list a:active {
+  color: var(--blue-button-color);
 }
 
 .contact-list a {
   color: var(--title-color-navyblue);
 }
 
+.contact-list a:active {
+  color: var(--active-blue-button-color);
+}
+
 .iris {
-  color: var(--inactive-button-text-color);
+  color: var(--white-button-text-color);
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   font-family: Roboto;
-  font-weight: Semibold;
-  size: 56px;
   letter-spacing: 2%;
   line-height: 60px;
+  color: var(--blue-button-text-color);
+  font-weight: 600;
+  font-size: 56px;
 }
 
 .hero {
@@ -88,76 +96,163 @@ h1 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: var(--title-color-navyblue);
+  height: 603px;
+  width: 1440px;
+  left: 0px;
+  top: 72px;
+  border-radius: 0px;
 }
 
 button {
-height: 51px;
-width: 170px;
-left: 635px;
-top: 432px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-padding: 16px 32px 16px 32px;
-background-color: var(--active-button-color);
-color:var(--active-button-text-color) ;
-width: 170px;
-height: 51px;
-left: 635px;
-top: 432px;
-}
-button:hover {
-box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  display: inline-block;
+  justify-content: center;
+  font-family: "Roboto";
 }
 
-button:active {
-    box-shadow: 0px 4px 4px 0px #00000026;
-background-color: #404BBF
+.blue-button {
+  height: 51px;
+  width: 170px;
+  left: 635px;
+  top: 432px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  background-color: var(--blue-button-color);
+  color: var(--blue-button-text-color);
+  width: 170px;
+  height: 51px;
+  left: 635px;
+  top: 432px;
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+}
+
+.blue-button:active {
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: #404bbf;
+}
+
+.white-button {
+  height: 51px;
+  width: 170px;
+  left: 635px;
+  top: 432px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  background-color: var(--white-button-color);
+  color: var(--white-button-text-color);
+  width: 170px;
+  height: 51px;
+  left: 635px;
+  top: 432px;
+}
+
+.white-button:hover,
+.white-button:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+}
+
+.white-button:active {
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: #404bbf;
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }
+
 h2 {
   font-family: Roboto;
   font-weight: Semibold;
   size: 36px;
   letter-spacing: 2%;
 }
-.hero {
-  background-color: var(--title-color-navyblue);
-  height: 603px;
-width: 1440px;
-left: 0px;
-top: 72px;
-border-radius: 0px;
 
+.advantages-list-item {
+  width: 264px;
+  height: 72px;
 }
 
-.hero > h1 {
-  color: var(--active-button-text-color);
-  font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 56px;
-line-height: 60px;
+.occupation h2 {
+  text-align: center;
 }
 
 .our-team {
-    background-color:var(--secondary-background-color) ;
+  background-color: var(--secondary-background-color);
+}
+
+.our-team h2 {
+  padding: 120px 639px 72px 639px;
+}
+
+.our-team li {
+  width: 264px;
+  height: 380px;
+  background-color: var(--main-background-color);
+  margin: 24px;
+}
+
+footer .second-logo {
+  color: #f4f4fd;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  padding: 100px 1240px 0px 156px;
 }
 
 footer {
-    background-color:var(--title-color-navyblue) ;
-    width: 1440px;
-height: 310px;
-left: 0px;
-
+  background-color: var(--title-color-navyblue);
+  width: 1440px;
+  height: 310px;
+  left: 0px;
 }
 
-.second-capital {
-  color: #F4F4FD;
+.summury {
+  width: 264px;
+  height: 72px;
+  padding-top: 16px;
+  padding-left: 156px;
+  padding-right: 1020px;
+  padding-bottom: 100px;
+  color: #e7e9fc;
+}
+
+.project-card li a {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  width: 360px;
+  height: 300px;
+  margin-bottom: 24px;
+}
+
+.project-item {
+  width: 360px;
+  height: 420px;
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  margin: 24px;
+}
+
+.project-item :hover,
+.project-item :focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+a h3 {
   font-weight: 600;
-  text-transform: uppercase;
-  Font-family: 'Raleway', sans-serif;
-  padding: 100px 50px 100px 100px
+}
+
+.project-card li a:hover,
+.project-card li a:focus {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
