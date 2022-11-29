@@ -56,7 +56,7 @@ nav li {
 }
 
 .nav-list li {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--title-color-navyblue);
 }
 .nav-list a:hover,
@@ -87,7 +87,7 @@ h1 {
   letter-spacing: 2%;
   line-height: 60px;
   color: var(--blue-button-text-color);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
 }
 
@@ -107,7 +107,7 @@ h1 {
 button {
   display: inline-block;
   justify-content: center;
-  font-family: "Roboto";
+  font-family: inherit;
 }
 
 .blue-button {
@@ -248,7 +248,7 @@ footer {
 }
 
 a h3 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .project-card li a:hover,
