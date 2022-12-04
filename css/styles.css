@@ -13,7 +13,7 @@
   --secondary-background-color: #f4f4fd;
   --title-color-navyblue: #2e2f42;
   --text-color-slate: #434455;
-  --white-button-color: #F4F4FD;
+  --white-button-color: #f4f4fd;
   --white-button-text-color: #4d5ae5;
   --blue-button-color: #4d5ae5;
   --blue-button-text-color: #ffffff;
@@ -32,6 +32,7 @@ a {
 }
 
 .logo {
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
@@ -55,13 +56,13 @@ nav li {
 }
 .nav-list a:hover,
 .nav-list a:focus {
-  color: var(--text-color-slate);
+  color: var(--white-button-text-color);
 }
 
-.contact-listx a:hover,
-.contact-listx a:focus {
-  color: var(--text-color-slate);
-} 
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--blue-button-color);
+}
 
 .nav-list a:active {
   color: var(--blue-button-color);
@@ -87,28 +88,22 @@ h1 {
   color: var(--blue-button-text-color);
   font-weight: 700;
   font-size: 56px;
+  width: 492px;
 }
 
 .hero {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--title-color-navyblue);
   height: 603px;
-
   left: 0px;
   top: 72px;
   border-radius: 0px;
 }
 
 .button-list {
-  display: flex;
-  flex-direction: row;
 }
 
 button {
-  font-family: "Robot", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
@@ -125,11 +120,12 @@ button {
 .blue-button:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+    background-color: #404bbf;
 }
 
 .blue-button:active {
   box-shadow: 0px 4px 4px 0px #00000026;
-  background-color: #404bbf;
+  background-color: var(--active-blue-button-color);
 }
 
 .white-button {
@@ -152,16 +148,27 @@ button {
 .white-button:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+    background-color: var(--blue-button-color);
+    color:var(--blue-button-text-color);
 }
 
 .white-button:active {
   box-shadow: 0px 4px 4px 0px #00000026;
-  background-color: #404bbf;
+  background-color: var(--active-blue-button-color);
   color: #ffffff;
 }
 
 .hidden {
-  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h2 {
@@ -185,7 +192,7 @@ h2 {
 }
 
 .our-team h3 {
-    color: var(--title-color-navyblue);
+  color: var(--title-color-navyblue);
 }
 
 .our-team li {
@@ -196,9 +203,7 @@ h2 {
 }
 
 .member-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
 }
 
 footer .second-logo {
@@ -206,13 +211,10 @@ footer .second-logo {
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
-  display: block;
-  padding: 100px 1240px 0px 156px;
 }
 
 footer {
   background-color: var(--title-color-navyblue);
-
   height: 310px;
   left: 0px;
 }
@@ -220,10 +222,6 @@ footer {
 .summury {
   width: 264px;
   height: 72px;
-  padding-top: 16px;
-  padding-left: 156px;
-  padding-right: 1020px;
-  padding-bottom: 100px;
   color: #e7e9fc;
 }
 
@@ -232,7 +230,6 @@ footer {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   width: 360px;
   height: 300px;
-  margin-bottom: 24px;
 }
 
 .project-item {
@@ -240,17 +237,15 @@ footer {
   height: 420px;
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  margin: 24px;
 }
 
 .project-item :hover,
 .project-item :focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
 
 h3 {
-    color: var(--title-color-navyblue)
+  color: var(--title-color-navyblue);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -263,6 +258,6 @@ h3 {
 }
 
 .project-item p {
-    font-size: 16px;
-    color: var(--text-color-slate);
+  font-size: 16px;
+  color: var(--text-color-slate);
 }
