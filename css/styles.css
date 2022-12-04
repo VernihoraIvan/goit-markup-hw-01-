@@ -26,10 +26,11 @@ body {
   color: var(--text-color-slate);
   text-decoration: none;
 }
+
 a {
   text-decoration: none;
-  color: var(--title-color-navyblue);
 }
+
 
 .logo {
   font-size: 18px;
@@ -54,6 +55,11 @@ nav li {
   font-weight: 700;
   color: var(--title-color-navyblue);
 }
+
+.nav-list a {
+      color: var(--title-color-navyblue);
+}
+
 .nav-list a:hover,
 .nav-list a:focus {
   color: var(--white-button-text-color);
@@ -69,7 +75,7 @@ nav li {
 }
 
 .contact-list a {
-  color: var(--title-color-navyblue);
+  color: var(--text-color-slate);
 }
 
 .contact-list a:active {
@@ -120,7 +126,7 @@ button {
 .blue-button:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-    background-color: #404bbf;
+  background-color: #404bbf;
 }
 
 .blue-button:active {
@@ -148,8 +154,8 @@ button {
 .white-button:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-    background-color: var(--blue-button-color);
-    color:var(--blue-button-text-color);
+  background-color: var(--blue-button-color);
+  color: var(--blue-button-text-color);
 }
 
 .white-button:active {
@@ -158,7 +164,7 @@ button {
   color: #ffffff;
 }
 
-.hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -178,6 +184,9 @@ h2 {
   color: var(--title-color-navyblue);
 }
 
+.project-item h2 {
+  font-size: 20px;
+}
 .advantages-list-item {
   width: 264px;
   height: 72px;
@@ -203,7 +212,6 @@ h2 {
 }
 
 .member-list {
-
 }
 
 footer .second-logo {
@@ -211,6 +219,7 @@ footer .second-logo {
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
 }
 
 footer {
@@ -237,11 +246,6 @@ footer {
   height: 420px;
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.project-item :hover,
-.project-item :focus {
-
 }
 
 h3 {
