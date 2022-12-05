@@ -24,7 +24,6 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
   color: var(--text-color-slate);
-  text-decoration: none;
 }
 
 a {
@@ -37,7 +36,7 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
-}
+color: var(--title-color-navyblue);}
 
 ul {
   list-style: none;
@@ -45,10 +44,6 @@ ul {
 
 header {
   background-color: var(--main-background-color);
-}
-
-nav li {
-  display: inline-block;
 }
 
 .nav-list li {
@@ -86,11 +81,11 @@ nav li {
   color: var(--white-button-text-color);
 }
 
-h1 {
+.hero-title {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  letter-spacing: 2%;
-  line-height: 60px;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
   color: var(--blue-button-text-color);
   font-weight: 700;
   font-size: 56px;
@@ -99,19 +94,14 @@ h1 {
 
 .hero {
   background-color: var(--title-color-navyblue);
-  height: 603px;
-  left: 0px;
-  top: 72px;
-  border-radius: 0px;
 }
 
-.button-list {
-}
 
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .blue-button {
@@ -120,11 +110,12 @@ button {
   padding: 16px 32px 16px 32px;
   background-color: var(--blue-button-color);
   color: var(--blue-button-text-color);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
 }
 
 .blue-button:hover,
 .blue-button:focus {
-  cursor: pointer;
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
   background-color: #404bbf;
 }
@@ -135,24 +126,15 @@ button {
 }
 
 .white-button {
-  height: 51px;
-  width: 170px;
-  left: 635px;
-  top: 432px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
   background-color: var(--white-button-color);
   color: var(--white-button-text-color);
-  width: 170px;
-  height: 51px;
-  left: 635px;
-  top: 432px;
 }
 
 .white-button:hover,
 .white-button:focus {
-  cursor: pointer;
   box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
   background-color: var(--blue-button-color);
   color: var(--blue-button-text-color);
@@ -177,20 +159,26 @@ button {
   overflow: hidden;
 }
 
-h2 {
-  font-family: "Roboto", sans-serif;
+.our-team-title {
+      font-family: "Roboto", sans-serif;
   font-size: 36px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--title-color-navyblue);
+  line-height: 1.1;
+}
+.advantages-list-item {
+    line-height: 1.07;
+
+}
+
+.member-list p {
+
 }
 
 .project-item h2 {
   font-size: 20px;
 }
-.advantages-list-item {
-  width: 264px;
-  height: 72px;
-}
+
 
 .occupation h2 {
   text-align: center;
@@ -222,14 +210,13 @@ footer .second-logo {
 
 footer {
   background-color: var(--title-color-navyblue);
-  height: 310px;
-  left: 0px;
+
 }
 
 .summury {
   width: 264px;
-  height: 72px;
   color: #e7e9fc;
+  line-height: 1.5;
 }
 
 .project-card li a {
@@ -246,11 +233,12 @@ footer {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-h3 {
+.advantages-sub-title{
   color: var(--title-color-navyblue);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
+  letter-spacing: 0.02em;
 }
 
 .project-card li a:hover,
