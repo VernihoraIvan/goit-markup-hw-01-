@@ -110,7 +110,7 @@ button {
   padding: 16px 32px 16px 32px;
   background-color: var(--blue-button-color);
   color: var(--blue-button-text-color);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   line-height: 1.2;
 }
 
