@@ -85,7 +85,6 @@ header {
 
 /* ==========================HERO============================== */
 .hero-title {
-  font-family: "Roboto", sans-serif;
   text-align: center;
   line-height: 1.07;
   color: var(--blue-button-text-color);
@@ -145,11 +144,9 @@ button {
 
 .advantages-sub-title {
   color: var(--title-color-navyblue);
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 
 .advantages-list-item {
@@ -159,11 +156,10 @@ button {
 
 /* =============================OFFERS=================================== */
 .occupation h2 {
-  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
+
   color: var(--title-color-navyblue);
   font-weight: 700;
 }
@@ -175,9 +171,7 @@ button {
 }
 
 .our-team-title {
-  font-family: "Roboto", sans-serif;
   font-size: 36px;
-  letter-spacing: 0.02em;
   color: var(--title-color-navyblue);
   line-height: 1.1;
 }
