@@ -30,13 +30,14 @@ a {
   text-decoration: none;
 }
 
-
 .logo {
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
-color: var(--title-color-navyblue);}
+  color: var(--title-color-navyblue);
+  letter-spacing: 0.03em;
+}
 
 ul {
   list-style: none;
@@ -52,7 +53,7 @@ header {
 }
 
 .nav-list a {
-      color: var(--title-color-navyblue);
+  color: var(--title-color-navyblue);
 }
 
 .nav-list a:hover,
@@ -77,14 +78,13 @@ header {
   color: var(--active-blue-button-color);
 }
 
-.iris {
+.blue-logo {
   color: var(--white-button-text-color);
 }
 
 .hero-title {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  letter-spacing: 0.02em;
   line-height: 1.07;
   color: var(--blue-button-text-color);
   font-weight: 700;
@@ -96,12 +96,14 @@ header {
   background-color: var(--title-color-navyblue);
 }
 
-
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  letter-spacing: 0.04em;
+  line-height: 1.17;
+    display: flex;
 }
 
 .blue-button {
@@ -111,7 +113,7 @@ button {
   background-color: var(--blue-button-color);
   color: var(--blue-button-text-color);
   letter-spacing: 0.02em;
-  line-height: 1.2;
+  line-height: 1.17;
 }
 
 .blue-button:hover,
@@ -126,7 +128,6 @@ button {
 }
 
 .white-button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
   background-color: var(--white-button-color);
@@ -159,29 +160,39 @@ button {
   overflow: hidden;
 }
 
-.our-team-title {
-      font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  letter-spacing: 0.02em;
-  color: var(--title-color-navyblue);
-  line-height: 1.1;
-}
 .advantages-list-item {
-    line-height: 1.07;
-
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .member-list p {
-
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .project-item h2 {
   font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-color-navyblue);
+  font-weight: 700;
 }
 
-
 .occupation h2 {
+  font-family: "Roboto", sans-serif;
   text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--title-color-navyblue);
+  font-weight: 700;
+}
+
+.our-team-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: var(--title-color-navyblue);
+  line-height: 1.1;
 }
 
 .our-team {
@@ -190,6 +201,8 @@ button {
 
 .our-team h3 {
   color: var(--title-color-navyblue);
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .our-team li {
@@ -199,18 +212,18 @@ button {
   margin: 24px;
 }
 
-
 footer .second-logo {
   color: #f4f4fd;
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 footer {
   background-color: var(--title-color-navyblue);
-
 }
 
 .summury {
@@ -233,11 +246,12 @@ footer {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.advantages-sub-title{
+.advantages-sub-title {
   color: var(--title-color-navyblue);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
@@ -248,6 +262,7 @@ footer {
 }
 
 .project-item p {
+  line-height: 1.5;
   font-size: 16px;
   color: var(--text-color-slate);
 }
